@@ -1,0 +1,35 @@
+@import "../../../common/lib/qui.qss";
+
+camera {
+  height: 500rpx;
+}
+.camera-wrap {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;  
+}
+.preview-tips {
+  margin: 20rpx 0;  
+}
+
+.photo, .video {
+  margin-top: 40rpx;
+  width: 100%;
+}
+
+
+.first-btn {
+  margin-top: 40rpx;
+}
+
+form {
+  margin-top: 30rpx;
+}
+button {
+  margin-top:0;
+  margin-bottom:0;
+}
+.btn-area {
+  margin-top:20rpx;
+}

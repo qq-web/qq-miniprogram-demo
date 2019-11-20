@@ -1,0 +1,12 @@
+@import "../../../common/lib/qui.qss";
+
+form {
+  margin-top: 30rpx;
+}
+
+.qui-cell__hd {
+  min-width:172rpx;
+}
+.qui-cell__bd {
+  text-align:center;
+}

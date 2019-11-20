@@ -1,0 +1,6 @@
+@import "../../../common/lib/qui.qss";
+
+
+.qui-cell-group__txt-title {
+  padding:4rpx 32rpx 8rpx 32rpx;
+}

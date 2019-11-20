@@ -1,0 +1,6 @@
+@import "../../../../app.qss";
+
+
+button {
+  background-color:#EBEDF5;
+}

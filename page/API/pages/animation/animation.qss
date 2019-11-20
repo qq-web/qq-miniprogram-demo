@@ -1,0 +1,39 @@
+.page-section {
+  padding-bottom:60rpx;
+}
+.animation-element-wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 150rpx;
+  padding-bottom: 150rpx;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #F5F6FA;
+}
+.animation-element {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #00CAFC;
+}
+.animation-buttons {
+  padding: 30rpx 50rpx 10rpx;
+  width: 100%;
+  /* height: 400rpx; */
+  box-sizing: border-box;
+}
+.animation-button {
+  float: left;
+  line-height: 2;
+  width: 300rpx;
+  margin: 15rpx 12rpx;
+}
+
+.animation-button-reset {
+  width: 620rpx;
+}
+
+
+
+button {
+  background-color:#EBEDF5;
+}

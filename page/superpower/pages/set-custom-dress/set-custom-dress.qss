@@ -1,0 +1,30 @@
+.avatar-wrap {
+  margin-bottom:100rpx;
+  padding:0 32rpx;
+}
+.avatar-wrap:nth-last-of-type(1) {
+  margin-bottom:0;
+}
+.avatar-wrap__hd {
+  margin-top:40rpx;
+  text-align:center;
+}
+.avatar-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#B0B3BF;
+}
+.avatar-wrap__bd {
+  margin-top:40rpx;
+}
+.avatar-wrap__img {
+  display:block;
+  margin:0 auto;
+  width:200rpx;
+  height:200rpx;
+  border-radius:100rpx;
+}
+.avatar-wrap__ft {
+  margin-top:40rpx;
+}

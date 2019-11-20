@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="接口_媒体_背景音乐_播放_icon">
+            <g id="编组">
+                <circle id="椭圆形" fill="#00CAFC" cx="74" cy="74" r="74"></circle>
+                <g id="接口/媒体/背景音乐/播放/icon" transform="translate(34.000000, 34.000000)" fill="#FFFFFF">
+                    <g id="icon/我的收藏/语音_72">
+                        <path d="M43.8595269,20.0956525 C45.0609494,18.2463862 47.0116084,18.2510131 48.2097335,20.0956525 L74.7886522,61.0166898 C75.9897825,62.8659561 75.1787186,64.3650826 72.9639202,64.3650826 L19.0983472,64.3650826 C16.8894452,64.3650826 16.0757277,62.8613292 17.2741441,61.0166898 L43.8595269,20.0956525 Z" id="Triangle-12" transform="translate(46.031134, 40.556171) rotate(90.000000) translate(-46.031134, -40.556171) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

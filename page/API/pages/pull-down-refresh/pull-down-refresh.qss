@@ -1,0 +1,10 @@
+
+.btn-area{
+  margin-top: 300rpx;
+}
+
+
+
+button {
+  background-color:#EBEDF5;
+}

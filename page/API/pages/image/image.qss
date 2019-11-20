@@ -1,0 +1,32 @@
+@import "../../../common/lib/qui.qss";
+
+
+.qui-cell__txt {
+  padding-left:48rpx;
+}
+.qui-cell__txt-tips  {
+  padding:0;
+}
+
+.upload-wrap {
+  padding:44rpx 0 28rpx 0;
+}
+.upload-wrap__bd {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.upload-wrap__item {
+  margin-right:16rpx;
+  margin-bottom:16rpx;
+}
+.upload-wrap__item:nth-last-of-type(1) {
+  margin-right:0;
+}
+.upload-wrap__item_default {}
+.upload-wrap__img {
+  display:block;
+  width:96rpx;
+  height:96rpx;
+  border-radius:8rpx;
+}

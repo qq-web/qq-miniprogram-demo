@@ -1,0 +1,9 @@
+@import "../../../common/lib/qui.qss";
+
+.video-wrap {
+  margin-bottom:40rpx;
+  text-align:center;
+}
+.video-wrap__bd {
+  margin:0 auto;
+}

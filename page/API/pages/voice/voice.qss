@@ -1,0 +1,40 @@
+.voice-wrap {
+  padding-top:68rpx;
+}
+.voice-wrap__hd {
+  text-align:center;
+  height:136rpx;
+}
+.voice-wrap__txt-title {
+  display:block;
+  line-height:1.5;
+  text-align:center;
+  font-size:62rpx;
+  color:#03081A;
+}
+.voice-wrap__txt-desc {
+  display:block;
+  line-height:1.3;
+  text-align:center;
+  font-size:34rpx;
+  color:#03081A;
+}
+.voice-wrap__bd {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding-top:52rpx;
+}
+.voice-wrap__item {
+  margin-right:240rpx;
+}
+.voice-wrap__item:nth-last-of-type(1) {
+  margin-right:0;
+}
+.voice-wrap__icon {
+  display:block;
+  margin:0 auto;
+  width:148rpx;
+  height:148rpx;
+}

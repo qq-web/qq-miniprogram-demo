@@ -1,0 +1,8 @@
+@import "../../../common/lib/qui.qss";
+
+button {
+  margin-top:40rpx;
+  margin-bottom:40rpx;
+  margin-left:32rpx;
+  margin-right:32rpx;
+}

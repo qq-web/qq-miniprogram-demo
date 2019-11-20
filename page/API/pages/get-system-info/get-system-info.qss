@@ -1,0 +1,9 @@
+@import "../../../common/lib/qui.qss";
+
+
+.qui-cell__txt-label {
+  min-width:140rpx;
+}
+.qui-cell__bd {
+  margin-left:50rpx;
+}

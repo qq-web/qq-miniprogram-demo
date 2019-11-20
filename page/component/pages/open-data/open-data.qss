@@ -1,0 +1,22 @@
+@import "../../../common/lib/qui.qss";
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40rpx;
+}
+
+.avatar-img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.country, .province, .city {
+  padding-right: 10rpx;
+}
+
+
+
+.qui-cell__bd {
+  padding-left:52rpx;
+}

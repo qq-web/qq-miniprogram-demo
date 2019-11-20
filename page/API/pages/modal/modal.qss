@@ -1,0 +1,4 @@
+/* page/API/pages/modal/modal.qss */
+button {
+  background-color:#EBEDF5;
+}

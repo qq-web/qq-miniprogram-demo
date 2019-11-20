@@ -1,0 +1,46 @@
+@import "../../../common/lib/qui.qss";
+
+
+
+.swiper-wrap {
+  margin-bottom:40rpx;
+  padding:0 60rpx;
+}
+swiper {
+  height:140px;
+}
+.swiper-wrap__item {
+  display: block;
+  height: 140px;
+}
+
+
+.options-wrap {
+  padding-bottom:40rpx;
+}
+.options-wrap__hd {
+  position:relative;
+  z-index:1;
+
+  margin:32rpx 32rpx 20rpx 32rpx;
+}
+.options-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.options-wrap__txt-time {
+  position:absolute;
+  top:50%;
+  right:0;
+  z-index:8;
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+  transform:translateY(-50%);
+}
+.options-wrap__bd {
+  padding:0 32rpx;
+}

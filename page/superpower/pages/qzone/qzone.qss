@@ -1,0 +1,6 @@
+@import "../../../common/lib/qui.qss";
+
+
+.btn-area {
+  margin-top:0;
+}

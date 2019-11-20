@@ -1,0 +1,28 @@
+@import "../../../common/lib/qui.qss";
+
+.checkbox-wrap {
+  margin-bottom:60rpx;
+}
+.checkbox-wrap__hd {
+  position: relative;
+  z-index:1;
+
+  margin:0 32rpx;
+}
+.checkbox-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.checkbox-wrap__bd {
+  margin-top:28rpx;
+  padding:0 32rpx;
+}
+.checkbox-wrap__label {
+  display:inline-block;
+  margin-right:40rpx;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#03081A;
+}

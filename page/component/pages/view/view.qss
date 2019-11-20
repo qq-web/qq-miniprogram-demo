@@ -1,0 +1,23 @@
+.flex-wrp{
+  margin-top: 32rpx;
+  display: flex;
+}
+.flex-item{
+  flex: 1;
+  height: 320rpx;
+  font-size: 34rpx;
+}
+.flex-item-V{
+  margin: 0 auto;
+  width: 320rpx;
+  height: 210rpx;
+}
+
+.page-section-spacing{
+  padding: 0 60rpx;
+}
+
+.page-section-title{
+  margin-top: -8rpx;
+  margin-bottom: -8rpx;
+}

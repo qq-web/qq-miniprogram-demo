@@ -1,0 +1,8 @@
+.info-wrap {
+  height:488rpx;
+}
+.info-wrap__txt-wifi {
+  line-height:1.5;
+  font-size:62rpx;
+  color:#03081A;
+}

@@ -1,0 +1,71 @@
+.music-wrap {}
+.music-wrap__bd {
+  height:340rpx;
+  text-align:center;
+  background-color:#FFF;
+}
+.music-wrap__txt-num {
+  display:inline-block;
+  margin-top:56rpx;
+  margin-bottom:40rpx;
+  line-height:1.5;
+  font-size:62rpx;
+  color:#03081A;
+}
+.music-wrap__progress {
+  display:none;
+  position:relative;
+  z-index:1;
+
+  margin:0 32rpx;
+}
+.music-wrap__txt-starttime {
+  position:absolute;
+  bottom:-40rpx;
+  left:0;
+  z-index:8;
+
+  display:inline-block;
+  line-height:1.5;
+  font-size:24rpx;
+  color:#03081A;
+}
+.music-wrap__txt-totaltime {
+  position:absolute;
+  bottom:-40rpx;
+  right:0;
+  z-index:8;
+
+  display:inline-block;
+  line-height:1.5;
+  font-size:24rpx;
+  color:#03081A;
+}
+.music-wrap__ft {
+  padding:16rpx 32rpx;
+}
+.music-wrap__txt-desc {
+  display:block;
+  line-height:1.3;
+  font-size:28rpx;
+  color:#878B99;
+  vertical-align:top;
+}
+.music-wrap__opt {
+  margin-top:136rpx;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.music-wrap__opt-icon {
+  display:block;
+  width:148rpx;
+  height:148rpx;
+}
+.music-wrap__opt-btn {
+  margin-right:100rpx;
+}
+.music-wrap__opt-btn:nth-last-of-type(1) {
+  margin-right:0;
+}

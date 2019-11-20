@@ -1,0 +1,10 @@
+/* .navigator-hover button{
+  background-color: #DEDEDE;
+}
+.other-navigator-hover button{
+  background-color: #DEDEDE;
+} */
+
+button {
+  background-color:#EBEDF5;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon_device_normal@2x图标/设备/默认状态</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标/设备/默认状态" fill="#989EB4" fill-rule="nonzero">
+            <g id="icon" transform="translate(12.000000, 7.000000)">
+                <path d="M4,28 L28,28 L28,32 L4,32 L4,38 L28,38 L28,4 L4,4 L4,28 Z M1.73333333,-2.27373675e-13 L30.2666667,-2.27373675e-13 C31.2239602,-2.27373675e-13 32,0.717972456 32,1.60363636 L32,40.3963636 C32,41.2820275 31.2239602,42 30.2666667,42 L1.73333333,42 C0.776039767,42 9.66338121e-13,41.2820275 9.66338121e-13,40.3963636 L9.66338121e-13,1.60363636 C9.66338121e-13,0.717972456 0.776039767,-2.27373675e-13 1.73333333,-2.27373675e-13 Z M16,37 C14.8954305,37 14,36.1045695 14,35 C14,33.8954305 14.8954305,33 16,33 C17.1045695,33 18,33.8954305 18,35 C18,36.1045695 17.1045695,37 16,37 Z" id="合并形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

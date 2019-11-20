@@ -1,0 +1,52 @@
+@import "../../../common/lib/qui.qss";
+
+.qui-cell-group__txt-title {
+  padding:0 32rpx 8rpx 32rpx;
+}
+
+.color-wrap {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  padding:20rpx 32rpx 20rpx 32rpx;
+}
+.color-wrap__item {
+  margin-right:56rpx;
+  margin-bottom:20rpx;
+  width:68rpx;
+  height:68rpx;
+  border-radius:14rpx;
+  border:4rpx solid transparent;
+  box-sizing:border-box;
+}
+.color-wrap__item:nth-last-of-type(1) {
+  margin-right:0;
+}
+.color-wrap__item_selected {
+  border:4rpx solid #00CAFC;
+}
+.color-wrap__txt-color-1 {
+  background-color:#03081A;
+}
+.color-wrap__txt-color-2 {
+  background-color:#FFF;
+}
+.color-wrap__bg-color-1 {
+  background-color:#FF596A;
+}
+.color-wrap__bg-color-2 {
+  background-color:#FF9F40;
+}
+.color-wrap__bg-color-3 {
+  background-color:#FFCC00;
+}
+.color-wrap__bg-color-4 {
+  background-color:#00D96D;
+}
+.color-wrap__bg-color-5 {
+  background-color:#21D9C9;
+}
+.color-wrap__bg-color-6 {
+  background-color:#C773FF;
+}

@@ -1,0 +1,16 @@
+@import "../../../common/lib/qui.qss";
+
+.canvas-wrap {}
+.canvas-wrap__bd {
+  margin:0 auto;
+  width: 275px;
+  height: 275px;
+  background-color: #fff;
+}
+
+.qui-cell-group + .qui-cell-group  {
+  margin-top:0;
+}
+.qui-cell_input .qui-input {
+  padding-left:0rpx;
+}

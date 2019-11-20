@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>next_arrow_nor@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表单/单行/左侧无图/带箭头" transform="translate(-693.000000, -40.000000)" fill-rule="nonzero">
+            <g id="小图标/右箭头/默认态">
+                <g transform="translate(693.000000, 40.000000)">
+                    <rect id="back" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) " x="7" y="1" width="18" height="30"></rect>
+                    <path d="M10.2928932,6 L11,5.29289322 C11.3905243,4.90236893 12.0236893,4.90236893 12.4142136,5.29289322 L22.561861,15.4405407 C22.9523853,15.831065 22.9523853,16.46423 22.561861,16.8547543 L12.5941579,26.8224574 C12.2036336,27.2129817 11.5704686,27.2129817 11.1799444,26.8224574 L10.4728376,26.1153506 C10.0823133,25.7248263 10.0823133,25.0916613 10.4728376,24.701137 L19.0263271,16.1476475 L10.2928932,7.41421356 C9.90236893,7.02368927 9.90236893,6.39052429 10.2928932,6 Z" id="Path-11" fill="#B0B3BF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

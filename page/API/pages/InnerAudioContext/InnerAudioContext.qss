@@ -1,0 +1,54 @@
+/* page/component/pages/audio/audio.qss */
+.page-section {
+  position: relative;
+  background-color: #F5F6FA;
+  width: 550rpx;
+  margin: 0 auto;
+  height: 120rpx;
+  border: 4rpx;
+}
+image {
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.page-body-button {
+  position: absolute;
+  left: 36rpx;
+  top: 36rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.text {
+  position: absolute;
+}
+.title {
+  left: 130rpx;
+  top: 18rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #03081A;
+  letter-spacing: 0;
+  text-align: center;
+}
+.singer {
+  left: 130rpx;
+  top: 68rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #878B99;
+  letter-spacing: 0;
+}
+.time {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #878B99;
+  letter-spacing: 0;
+  text-align: center;
+  right: 20rpx;
+  top: 16rpx;
+}

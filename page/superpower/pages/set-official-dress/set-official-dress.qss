@@ -1,0 +1,19 @@
+.avatar-wrap {
+  margin-bottom:100rpx;
+  padding:0 32rpx;
+}
+.avatar-wrap:nth-last-of-type(1) {
+  margin-bottom:0;
+}
+.avatar-wrap__hd {}
+.avatar-wrap__bd {}
+.avatar-wrap__img {
+  display:block;
+  margin:0 auto;
+  width:200rpx;
+  height:200rpx;
+  border-radius:100rpx;
+}
+.avatar-wrap__ft {
+  margin-top:40rpx;
+}

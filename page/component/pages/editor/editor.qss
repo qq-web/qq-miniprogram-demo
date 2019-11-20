@@ -1,0 +1,5 @@
+.editor-container {
+    padding: 10rpx 25rpx;
+    background-color: #fff;
+    height: 80%;
+}

@@ -1,0 +1,6 @@
+@import "../../../common/lib/qui.qss";
+
+
+.qui-cell__txt-label {
+  min-width:120rpx;
+}

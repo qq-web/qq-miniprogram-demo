@@ -1,0 +1,11 @@
+.info-wrap {
+  padding-top:260rpx;
+  padding-bottom:120rpx;
+}
+
+.img {
+  display:block;
+  margin:0 auto;
+  width:600rpx;
+  height:600rpx;
+}

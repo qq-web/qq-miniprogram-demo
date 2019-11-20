@@ -1,0 +1,39 @@
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  width: 100rpx;
+  background: #00CAFC;
+  color: #fff;  
+}
+
+movable-area {
+  width: 622rpx;
+  height: 310rpx;
+  margin: 32rpx auto 0;
+  background-color: #EBEDF5;
+  overflow: hidden;
+}
+
+.max {
+  width: 800rpx;
+  height: 500rpx;
+}
+
+.page-section {
+  width: 100%;
+}
+
+.page-section-title {
+  margin-top: 100rpx;
+  margin-bottom: -8rpx;
+}
+
+.page-section-title.first {
+  margin-top: 0;
+}
+
+.btn-area {
+  margin-top: -76rpx;
+}

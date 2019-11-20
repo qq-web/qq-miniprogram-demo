@@ -1,0 +1,29 @@
+.upload-wrap {
+  width:100%;
+  height:296rpx;
+  background-color:#FFF;
+}
+.upload-wrap__inner {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:100%;
+}
+.upload-wrap__img {
+  height:240rpx;
+}
+.upload-wrap__icon {
+  display:block;
+  margin:0 auto;
+  width:80rpx;
+  height:80rpx;
+}
+.upload-wrap__txt {
+  display:inline-block;
+  margin-top:20rpx;
+  line-height:1.3;
+  text-align:center;
+  font-size:28rpx;
+  color:#B0B3BF;
+}

@@ -1,0 +1,54 @@
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  width: 100rpx;
+  background: #00CAFC;
+  color: #fff;  
+}
+
+movable-area {
+  height: 550rpx;
+  width: 550rpx;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric {
+  display: flex;
+  flex-direction:column;
+  width: 550rpx;
+  padding:0 32rpx;
+  box-sizing:border-box;
+}
+.metric__item {
+  flex:1;
+  text-align:center;
+}
+.metric__txt-label {
+  display: inline-block;
+  width:240rpx;
+  text-align:left;
+  line-height:1.5;
+  /* font-weight:bold; */
+  font-size:34rpx;
+}
+.metric__txt {
+  display: inline-block;
+  width:240rpx;
+  line-height:1.5;
+  font-size:34rpx;
+  text-align:right;
+}

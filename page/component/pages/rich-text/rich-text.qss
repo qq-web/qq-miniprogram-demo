@@ -1,0 +1,32 @@
+scroll-view {
+  height: 523rpx;
+  white-space: pre;
+  padding: 10rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+button {
+  margin-top: 40rpx;
+  margin-bottom: 0;
+}
+
+
+.code-wrap {}
+.code-wrap__hd {
+  margin:4rpx 32rpx 8rpx 32rpx;
+}
+.code-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.code-wrap__bd {
+  margin-bottom:60rpx;
+  padding:0 32rpx;
+}
+.code-wrap__ft {}
+.code-wrap__txt-result {
+  padding-top:20rpx;
+}

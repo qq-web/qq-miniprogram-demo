@@ -1,0 +1,43 @@
+@import "../../../common/lib/qui.qss";
+
+.qui-cell__hd {
+  min-width:136rpx;
+}
+.qui-cell__txt {
+  padding-left:48rpx;
+}
+
+
+.video-wrap {
+  padding:32rpx 0;
+  margin-top:20rpx;
+  width:100%;
+  min-height:296rpx;
+  background-color:#FFF;
+  box-sizing:border-box;
+}
+.video-wrap__inner {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:296rpx;
+}
+.video-wrap__icon {
+  display:block;
+  margin:0 auto;
+  width:80rpx;
+  height:80rpx;
+}
+.video-wrap__txt {
+  display:inline-block;
+  margin-top:20rpx;
+  line-height:1.3;
+  text-align:center;
+  font-size:28rpx;
+  color:#B0B3BF;
+}
+
+.video {
+  height:296rpx;
+}

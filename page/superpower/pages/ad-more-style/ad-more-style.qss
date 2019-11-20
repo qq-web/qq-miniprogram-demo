@@ -1,0 +1,223 @@
+@import "../../../common/index.qss";
+
+.nav-wrap {}
+.nav-wrap__inner {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  padding:0 32rpx;
+  min-height:112rpx;
+  background-color:#FFF;
+}
+.nav-wrap__item {
+  flex:1;
+
+  text-align:center;
+}
+.nav-wrap__txt {
+  display:inline-block;
+  padding:8rpx 0;
+  min-width:216rpx;
+  text-align:center;
+  color:#878B99;
+  line-height:1.5;
+  font-size:32rpx;
+  border-radius:32rpx;
+  box-sizing:border-box;
+}
+.nav-wrap__item_active {}
+.nav-wrap__item_active .nav-wrap__txt {
+  color:#00CAFC;
+  background-color:rgba(0, 202, 252, .1);
+}
+
+
+
+.list-wrap__txt-num {
+  display:block;
+  position:absolute;
+  top:50%;
+  right:32rpx;
+  z-index:8;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#B0B3BF;
+  transform:translateY(-50%);
+}
+
+
+.banner-wrap {
+  position:relative;
+  z-index:1;
+
+  margin:0 25rpx;
+}
+.banner-wrap_type-1 {}
+.banner-wrap_type-1 .banner-wrap__img {
+  width:700rpx;
+  height:199rpx;
+}
+.banner-wrap_type-2 {}
+.banner-wrap_type-2 .banner-wrap__img {
+  width:700rpx;
+  height:253rpx;
+}
+.banner-wrap_type-4 {
+  padding:20rpx 0;
+}
+.banner-wrap_type-4 .banner-wrap__img {
+  width:602rpx;
+  height:659rpx;
+}
+.banner-wrap_type-5 {
+  padding:20rpx 0;
+}
+.banner-wrap_type-5 .banner-wrap__img {
+  width:700rpx;
+  height:590rpx;
+}
+.banner-wrap_type-5 .banner-wrap__bd {
+  min-width:700rpx;
+  min-height:590rpx;
+}
+.banner-wrap_type-6 {}
+.banner-wrap_type-6 .banner-wrap__img {
+  width:700rpx;
+  height:184rpx;
+}
+.banner-wrap_type-7 {}
+.banner-wrap_type-7 .banner-wrap__img {
+  width:700rpx;
+  height:184rpx;
+}
+.banner-wrap_type-8 {}
+.banner-wrap_type-8 .banner-wrap__img {
+  width:684rpx;
+  height:166rpx;
+}
+.banner-wrap__hd {
+  padding:32rpx 0 8rpx 0;
+}
+.banner-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.banner-wrap__bd {
+  position:relative;
+  z-index:1;
+}
+.banner-wrap__btn-close {
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:12;
+  width:88rpx;
+  height:88rpx;
+  background-color:transparent;
+}
+.banner-wrap__img {
+  display:block;
+  margin:0 auto;
+}
+.banner-wrap__ft {
+  margin:0 auto;
+  width:602rpx;
+}
+.banner-wrap__txt-tips {
+  display:inline-block;
+  margin-bottom:12rpx;
+  margin-top:14rpx;
+  line-height:1.3;
+  font-size:28rpx;
+  color:#878B99;
+  vertical-align:top;
+}
+
+
+
+.changecolor-wrap {}
+.changecolor-wrap__hd {
+  margin:32rpx;
+}
+.changecolor-wrap__txt-title {
+  display:inline-block;
+  line-height:1.5;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.changecolor-wrap__bd {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+
+  margin:0 32rpx;
+}
+.changecolor-wrap__item {
+  min-width:92rpx;
+  margin-right:78rpx;
+}
+.changecolor-wrap__item:nth-last-of-type(1) {
+  margin-right:0;
+}
+.changecolor-wrap__item_active {}
+.changecolor-wrap__item_active .changecolor-wrap__icon-square {
+  border:2px solid #00CAFC;
+}
+.changecolor-wrap__item-1 {}
+.changecolor-wrap__item-1 .changecolor-wrap__icon-square {
+  background-color:rgba(255, 255, 255, .1);
+}
+.changecolor-wrap__item-2 {}
+.changecolor-wrap__item-2 .changecolor-wrap__icon-square {
+  background-color:rgba(255, 255, 255, .5);
+}
+.changecolor-wrap__item-3 {}
+.changecolor-wrap__item-3 .changecolor-wrap__icon-square {
+  background-color:rgba(255, 255, 255, 1);
+}
+.changecolor-wrap__icon-square {
+  width:66rpx;
+  height:66rpx;
+  border:2rpx solid #989EB4;
+  box-sizing:border-box;
+  border-radius:10rpx;
+}
+.changecolor-wrap__txt {
+  display:block;
+  margin-top:20rpx;
+  line-height:1.5;
+  font-size:20rpx;
+  color:#878B99;
+}
+
+
+.banner-area {
+  background-color:#F5F6FA;
+}
+.banner-area_1 {
+  background-color:#F5F6FA;
+  padding-bottom:40rpx;
+}
+.banner-area_2 {
+  background-color:#E5F9FE;
+  padding-bottom:40rpx;
+}
+.banner-area_3 {
+  background-color:#363636;
+  padding-bottom:40rpx;
+}
+
+
+
+.video {
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+  width:100%;
+  height:100%;
+  background-color:#000;
+}

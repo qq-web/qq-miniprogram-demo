@@ -1,0 +1,26 @@
+.story-wrap {
+  padding:0 60rpx;
+}
+.story-wrap__bd {}
+.story-wrap__list {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:32rpx 0;
+  min-height: 300rpx;
+
+  background-color:#FFF;
+}
+.story-wrap__txt {
+  text-align:center;
+  color: #03081A;
+  font-size:28rpx;
+  line-height:1.5;
+}
+.story-wrap__ft {
+  padding-top:40rpx;
+}
+
+button {
+  margin-bottom:20rpx;
+}

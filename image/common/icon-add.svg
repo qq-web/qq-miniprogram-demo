@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>添加</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="添加视频" transform="translate(-335.000000, -81.000000)" fill="#B0B3BF">
+            <g id="添加" transform="translate(335.000000, 81.000000)">
+                <rect id="矩形" x="0" y="38" width="80" height="4" rx="1"></rect>
+                <path d="M1,38 L79,38 C79.5522847,38 80,38.4477153 80,39 L80,41 C80,41.5522847 79.5522847,42 79,42 L1,42 C0.44771525,42 6.76353751e-17,41.5522847 0,41 L0,39 C-6.76353751e-17,38.4477153 0.44771525,38 1,38 Z" id="矩形-copy-2" transform="translate(40.000000, 40.000000) rotate(-90.000000) translate(-40.000000, -40.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

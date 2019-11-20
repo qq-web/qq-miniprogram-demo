@@ -1,0 +1,22 @@
+.info-wrap {
+  height:488rpx;
+}
+.info-wrap__txt-result {
+  line-height:1.5;
+  font-size:80rpx;
+  color:#03081A;
+}
+
+.others-wrap {}
+.others-wrap__hd {
+  padding:32rpx 32rpx 16rpx 32rpx;
+}
+.others-wrap__txt {
+  display:inline-block;
+  line-height:1.3;
+  font-size:28rpx;
+  color:#8A8E9B;
+}
+.others-wrap__bd {
+  padding:0 24rpx;
+}

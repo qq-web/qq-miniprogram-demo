@@ -1,0 +1,4 @@
+/* page/API/pages/toast/toast.qss */
+button {
+  background-color:#EBEDF5;
+}

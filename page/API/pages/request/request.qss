@@ -1,0 +1,4 @@
+.info-wrap {
+  padding-top:260rpx;
+  padding-bottom:120rpx;
+}
