@@ -12,11 +12,9 @@ jobs:
 
     steps:
     
-	#第一步：获取小程序源码
     - name: Checkout 
       uses: actions/checkout@master
       
-	#第二步：上传小程序版本到管理端，并将此版本设置为体验版（设置体验版可选）
     - name: Build 
       uses: docker://qqminiapp/build:latest 
       env: 
