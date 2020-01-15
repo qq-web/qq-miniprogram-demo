@@ -1,0 +1,23 @@
+.map-wrap {
+  width: 750rpx;
+}
+
+.map-wrap map {
+  width: 750rpx;
+  height: 562rpx;
+}
+
+.map-wrap__title {
+  margin: 12rpx 32rpx 16rpx 32rpx;
+  font-size: 28rpx;
+  color: #878B99;
+}
+
+.map-wrap__title-link {
+  display: inline-block;
+  color: #4D94FF;
+}
+
+.mt32 {
+  margin-top: 32rpx;
+}

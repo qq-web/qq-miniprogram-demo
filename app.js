@@ -6,6 +6,7 @@ App({
   },
   onShow(opts) {
     console.log('App Show', opts);
+    this.globalData.appOnShowOptions = opts;
     // qq.testNewApi()
   },
   onHide() {
@@ -14,6 +15,7 @@ App({
   globalData: {
     hasLogin: false,
     openid: null,
+    appOnShowOptions: null,
   },
   // lazy loading openid
   getUserOpenId(callback) {

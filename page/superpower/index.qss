@@ -3,3 +3,30 @@
 page {
   background-color: #F5F6FA !important;
 }
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 224rpx;
+  height: 224rpx;
+  margin: 0 0 20rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.grid-list__item-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.grid-list__item-title {
+  font-size: 28rpx;
+}

@@ -9,55 +9,58 @@ Page({
   data: {
     list: [
       {
-        id: 'group',
-        name: '打开群资料卡',
-        url: 'group-profile/group-profile',
+        id: 'relationship',
+        name: '关系链拓展',
+        url: 'relationship/relationship',
       },
       {
-        id: 'qzone',
-        name: '分享至QQ空间或好友',
+        id: 'share',
+        name: '分享强化',
         url: 'qzone/qzone',
       },
       {
-        id: 'pc',
-        name: '分享至PC',
-        url: 'general-webpage-url/general-webpage-url',
+        id: 'msg',
+        name: '消息触达',
+        url: 'message/message',
       },
       {
         id: 'ad',
-        name: '广告更多样式',
+        name: '广告能力',
         url: 'ad-more-style/ad-more-style',
       },
       {
-        id: 'official-dress',
-        name: '设置官方装扮',
-        url: 'set-official-dress/set-official-dress',
+        id: 'individuation',
+        name: '个性化能力',
+        url: 'individuation/individuation',
       },
       {
-        id: 'custom-dress',
-        name: '设置自定义装扮',
-        url: 'set-custom-dress/set-custom-dress',
+        id: 'media',
+        name: '音视频能力',
+        url: 'media/media',
       },
       {
-        id: 'publish',
-        name: '空间说说发表',
-        url: 'open-qzone-publish/open-qzone-publish',
+        id: 'map',
+        name: '地图',
+        url: 'map/map',
       },
     ],
   },
 
   onShow() {
+    qq.reportAnalytics('enter_home_programmatically', {});
     this.leaveSetTabBarPage();
   },
   onHide() {
     this.leaveSetTabBarPage();
   },
   kindToggle(e) {
-    const { id } = e.currentTarget; const
-      { list } = this.data;
+    const { id } = e.currentTarget;
+    const { list } = this.data;
     for (let i = 0, len = list.length; i < len; ++i) {
       if (list[i].id === id) {
         if (list[i].url) {
+          console.log(`pages/${list[i].url}`);
+
           qq.navigateTo({
             url: `pages/${list[i].url}`,
           });

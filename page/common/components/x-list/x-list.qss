@@ -1,0 +1,32 @@
+.x-list__hd {
+  display: flex;
+  justify-content: center;
+  padding: 40rpx 0;
+}
+
+.x-list__logo {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.x-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 112rpx;
+  margin-left: 32rpx;
+  font-size: 34rpx;
+  text-indent: 30rpx;
+  border-bottom: 1rpx solid #eaedf6;
+}
+
+.x-list__item-more {
+  display: block;
+  position: absolute;
+  top:50%;
+  right: 24rpx;
+  z-index: 12;
+  width: 32rpx;
+  height: 32rpx;
+  transform:translateY(-50%);
+}

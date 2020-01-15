@@ -1,9 +1,37 @@
-@import "../../../common/lib/qui.qss";
+/* @import "../../../common/lib/weui.qss"; */
 
-.qui-cell-group__txt-title {
-  padding:4rpx 32rpx 8rpx 32rpx
+.picker-wrap {
+  flex: 1;
 }
 
-.qui-cell__txt {
-  padding-left:48rpx;
+.section__title {
+  margin: 32rpx 32rpx 16rpx 32rpx;
+  font-size: 28rpx;
+  color: #878B99;
+}
+
+.picker {
+  display: flex;
+  align-items: center;
+  height: 112rpx;
+  padding: 0 32rpx;
+  font-size: 34rpx;
+  color: #03081A;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.picker-label {
+  margin-right: 48rpx;
+  flex-shrink: 0;
+}
+
+.picker-value {
+  flex: 1;
+  text-align: justify;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

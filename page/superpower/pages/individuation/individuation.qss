@@ -1,0 +1,9 @@
+page {
+  background-color: #F5F6FA;
+}
+
+.x-container {
+  height: calc(100vh - 20rpx);
+  margin-top: 20rpx;
+  background-color: #fff;
+}

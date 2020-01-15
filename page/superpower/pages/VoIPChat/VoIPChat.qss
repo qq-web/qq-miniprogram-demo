@@ -1,0 +1,12 @@
+@import "../../../common/lib/qui.qss";
+
+.VolPChat-room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 392rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #03081A;
+  background-color: #fff;
+}

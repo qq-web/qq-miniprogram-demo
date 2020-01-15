@@ -1,24 +1,18 @@
 {
-  "name": "qq-miniprogram-demo",
+  "name": "miniprogram-demo",
   "version": "1.0.0",
-  "description": "qq miniprogram demo",
+  "description": "QQ小程序示例源码 > 请使用QQ开发者工具或QQ Android客户端7.9.9/Ios客户端8.0.3及以上版本运行。",
   "main": "app.js",
   "scripts": {
-    "eslint": "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qq-web/qq-miniprogram-demo.git"
+    "url": "http://git.code.oa.com/QQMiniApp/miniprogram-demo.git"
   },
-  "author": "qq-web",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/qq-web/qq-miniprogram-demo/issues"
-  },
-  "homepage": "https://github.com/qq-web/qq-miniprogram-demo#readme",
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
   }
 }

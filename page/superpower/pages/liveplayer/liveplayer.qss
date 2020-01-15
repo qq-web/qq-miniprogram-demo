@@ -1,0 +1,9 @@
+.liveplayer-box {
+  height: 392rpx;
+  background-color: #fff;
+}
+
+live-player {
+  width: 100%;
+  height: 392rpx;
+}
