@@ -1,0 +1,74 @@
+@import "../../../common/lib/qui.qss";
+
+.livepusher-box {
+  background-color: #fff;
+}
+
+live-pusher {
+  width: 100%;
+  height: 392rpx;
+}
+
+.qui-cell {
+  overflow: hidden;
+}
+
+.qui-cell__txt-label {
+  margin-right: 37rpx;
+}
+
+.btn-copy {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rpx;
+  height: 100%;
+  min-height: 112rpx;
+  margin-right: -32rpx;
+  border-left: 1px solid rgba(235, 237, 245, 0.5);
+}
+
+.btn-copy image {
+  width: 24rpx;
+  height: 27rpx;
+}
+
+.qui-cell__bd {
+  display: flex;
+  align-items: center;
+}
+
+.livepusher-input {
+  width: 450rpx;
+}
+
+.livepusher-button {
+  margin-right: 20rpx;
+  padding: 15rpx 32rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #03081A;
+  border-radius: 42px;
+  background-color: #EDEFF5;
+}
+
+
+.radio-group radio {
+  display: none;
+}
+
+.livepusher-button-primary {
+  margin-right: 20rpx;
+  padding: 15rpx 46rpx;
+  font-size: 28rpx;
+  color: #878B99;
+  border-radius: 42px;
+  background: none;
+}
+
+.livepusher-button-primary.active {
+  color: #00CAFC;
+  font-weight: bold;
+  background-color: rgba(0, 202, 252, 0.1);
+}

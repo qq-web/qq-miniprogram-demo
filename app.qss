@@ -2,7 +2,6 @@
 page {
   /* background-color: #F8F8F8; */
   background-color: #FFF;
-  height: 100%;
 }
 
 view, text {
@@ -36,7 +35,7 @@ input {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   /* justify-content: space-between; */
   font-size: 32rpx;
   font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
@@ -158,7 +157,7 @@ input {
 
 /* widget */
 .btn-area{
-  margin-top:40rpx;
+  margin-top: 20rpx;
   box-sizing: border-box;
   width: 100%;
   padding: 0 32rpx;
@@ -246,12 +245,12 @@ input {
 
 /* 开始改造 */
 .page-hd {
-  padding:32rpx 0;
+  padding: 48rpx 0 60rpx 0;
   background-color:#FFF;
 }
 .page-hd__txt-title {
   display:block;
-  padding:38rpx 0;
+  padding-bottom: 26rpx;
   text-align:center;
   line-height:1.3;
   font-size:28rpx;
@@ -323,4 +322,17 @@ input {
   line-height:1.5;
   font-size:24rpx;
   color:#4D94FF;
+}
+
+.page-tips {
+  margin: 22rpx 0;
+  font-size: 28rpx;
+  text-align: center;
+  color: #999;
+}
+
+.button-preview__disabled {
+  text-align: center;
+  font-size: 28rpx;
+  color: #03081A;
 }

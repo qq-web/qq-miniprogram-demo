@@ -19,7 +19,7 @@ const config = {
   requestUrl: 'https://q.qq.com',
 
   // 用code换取openId
-  openIdUrl: `https://${host}/openid`,
+  openIdUrl: 'https://q.qq.com/demo/openid',
 
   // 测试的信道服务接口
   tunnelUrl: `https://${host}/tunnel`,
@@ -28,13 +28,13 @@ const config = {
   paymentUrl: `https://${host}/payment`,
 
   // 发送模板消息接口
-  templateMessageUrl: `https://${host}/templateMessage`,
+  templateMessageUrl: 'https://q.qq.com/demo/templateMessage',
 
   // 存储示例value
   testValue: '520',
 
   // 发送订阅消息接口
-  subscribeMessageUrl: `https://${host}/subscribeMessage`,
+  subscribeMessageUrl: 'https://q.qq.com/demo/subscribeMessage',
 
   // 上传文件接口
   uploadFileUrl: 'https://q.qq.com/upload',

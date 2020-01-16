@@ -1,7 +1,7 @@
 const app = getApp();
 const util = require('../../../../util/util.js');
 
-const dataUrl = 'https://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMO.mp3';
+const dataUrl = 'http://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMO.mp3';
 Page({
   onShareAppMessage() {
     return {
@@ -51,6 +51,15 @@ Page({
         that.enableInterval();
       }, 2000);
     });
+    // qq.seekBackgroundAudio({
+    //   position: e.detail.value,
+    //   complete() {
+    //     // 实际会延迟两秒左右才跳过去
+    //     setTimeout(function () {
+    //       that.enableInterval()
+    //     }, 2000)
+    //   }
+    // })
   },
   pause() {
     const that = this;

@@ -2,6 +2,12 @@ Page({
   data: {
     imagePath: '',
   },
+  onShareAppMessage() {
+    return {
+      title: '设置自定义装扮',
+      path: 'page/superpower/pages/set-custom-dress/set-custom-dress',
+    };
+  },
   chooseImage() {
     const that = this;
     qq.chooseImage({

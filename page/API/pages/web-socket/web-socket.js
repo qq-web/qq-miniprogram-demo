@@ -58,6 +58,9 @@ Page({
     if (turnedOn && this.data.socketStatus === 'closed') {
       this.openSocket();
     } else if (!turnedOn && this.data.socketStatus === 'connected') {
+      // ？？？迷之代码，先注释掉。
+      // const showSuccess = true;
+      // this.closeSocket(showSuccess);
       this.closeSocket();
     }
   },

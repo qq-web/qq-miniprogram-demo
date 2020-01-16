@@ -34,7 +34,7 @@ Page({
 
     const that = this;
     recordTimeInterval = setInterval(() => {
-      that.data.recordTime++;
+      that.data.recordTime += 1;
       const { recordTime } = that.data;
       that.setData({
         formatedRecordTime: util.formatTime(that.data.recordTime),

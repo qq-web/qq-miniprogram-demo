@@ -1,8 +1,13 @@
 Page({
-  data: {
-
+  data: {},
+  onShareAppMessage() {
+    return {
+      title: '设置官方装扮',
+      path: 'page/superpower/pages/set-official-dress/set-official-dress',
+    };
   },
   getAvatar(info) {
+    console.log('info.detail.userInfo', info.detail.userInfo.avatarUrl);
     qq.getImageInfo({
       src: info.detail.userInfo.avatarUrl,
       success(res) {
@@ -13,6 +18,9 @@ Page({
             qq.showToast({
               title: '保存成功',
             });
+            // that.setData({
+            //   imagePath: res.path
+            // })
           },
           fail(err) {
             console.log('save err', err);

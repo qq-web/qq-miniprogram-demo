@@ -6,7 +6,7 @@ Page({
   onShareAppMessage() {
     return {
       title: 'ad',
-      path: 'page/component/pages/ad/ad',
+      path: 'page/superpower/pages/ad-more-style/ad-more-style',
     };
   },
 

@@ -4,3 +4,14 @@
 .btn-area {
   margin-top:0;
 }
+
+.list-wrap__group-tips {
+  padding:12rpx 32rpx 24rpx 62rpx;
+  background-color:#F5F6FA;
+}
+.list-wrap__group-txt-tips {
+  display:inline-block;
+  line-height:1.3;
+  font-size:28rpx;
+  color:#878B99;
+}

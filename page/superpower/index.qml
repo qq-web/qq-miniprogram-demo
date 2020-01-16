@@ -5,33 +5,13 @@
   </view>
   <view class="index-bd">
 
-    <view class="list-wrap">
+    <view class="grid-list">
       <block qq:for-items="{{list}}" qq:key="{{item.id}}">
-        <view class="list-wrap__group">
-          <view id="{{item.id}}" class="list-wrap__group-hd" bindtap="kindToggle">
-            <text class="list-wrap__group-title superpowerText">{{item.name}}</text>
-            <image class="list-wrap__group-icon" src="../../image/index/{{item.id}}.svg"  mode="aspectFill" />
-          </view>
-          <view class="list-wrap__group-bd">
-            <block qq:for-items="{{item.pages}}" qq:for-item="page" qq:key="*item">
-              <navigator url="pages/{{page.url}}" class="list-wrap__item" qq:if="{{page.url !== '@set-tab-bar'}}">
-                <view class="list-wrap__item-bd">
-                  <text class="list-wrap__txt-title">{{page.zh}}</text>
-                </view>
-                <view class="list-wrap__item-ft"></view>
-              </navigator>
-
-              <view class="list-wrap__item" qq:else bindtap="enterSetTabBarPage">
-                <view class="list-wrap__item-bd">
-                  <text class="list-wrap__txt-title">{{page.zh}}</text>
-                </view>
-                <view class="list-wrap__item-ft"></view>
-              </view>              
-            </block>
-          </view>
+        <view id="{{item.id}}" class="grid-list__item" bindtap="kindToggle">
+          <image class="grid-list__item-icon" src="../../image/common/{{item.id}}.svg" mode="aspectFill" />
+          <text class="grid-list__item-title">{{item.name}}</text>
         </view>
       </block>
     </view>
-
   </view>
 </view>

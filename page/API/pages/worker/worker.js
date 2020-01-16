@@ -14,12 +14,12 @@ Page({
   },
 
   onLoad() {
-    this.workerInstance = qq.createWorker('workers/fib/index.js');
+    this.worker = qq.createWorker('workers/fib/index.js');
   },
 
   onUnload() {
     clearInterval(this.interval);
-    if (this.workerInstance) this.workerInstance.terminate();
+    if (this.worker) this.worker.terminate();
   },
 
   bindInput(e) {
@@ -58,11 +58,11 @@ Page({
     });
 
     const t0 = +Date.now();
-    this.workerInstance.postMessage({
+    this.worker.postMessage({
       type: 'execFunc_fib',
       params: [this.data.input],
     });
-    this.workerInstance.onMessage((res) => {
+    this.worker.onMessage((res) => {
       if (res.type === 'execFunc_fib') {
         qq.hideLoading();
         const t1 = +Date.now();

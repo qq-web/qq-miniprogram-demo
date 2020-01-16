@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>图标/组件/大图标/地图</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图标/组件/大图标/地图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(13.000000, 15.000000)">
+            <polygon id="路径" stroke="#989EB4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="18 1.81188398e-14 36 3.825 54 0 54 47.175 36 51 18 47.175 0 51 0 3.825 18 5.43565193e-14"></polygon>
+            <path d="M40,4 L40,48 L34,48 L34,4 L40,4 Z M22,3 L22,45 L16,45 L16,3 L22,3 Z" id="合并形状" fill="#989EB4"></path>
+        </g>
+    </g>
+</svg>

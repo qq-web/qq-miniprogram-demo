@@ -106,6 +106,7 @@ Page({
             data.multiArray[2] = ['鲫鱼', '带鱼'];
             break;
           default:
+            break;
         }
         data.multiIndex[1] = 0;
         data.multiIndex[2] = 0;
@@ -130,6 +131,7 @@ Page({
                 data.multiArray[2] = ['昆虫', '甲壳动物', '蛛形动物', '多足动物'];
                 break;
               default:
+                break;
             }
             break;
           case 1:
@@ -144,14 +146,17 @@ Page({
                 data.multiArray[2] = ['蜥蜴', '龟', '壁虎'];
                 break;
               default:
+                break;
             }
             break;
           default:
+            break;
         }
         data.multiIndex[2] = 0;
         console.log(data.multiIndex);
         break;
       default:
+        break;
     }
     this.setData(data);
   },
