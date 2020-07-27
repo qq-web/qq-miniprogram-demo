@@ -2,15 +2,15 @@ Page({
   onShareAppMessage() {
     return {
       title: 'textarea',
-      path: 'page/component/pages/textarea/textarea',
-    };
+      path: 'page/component/pages/textarea/textarea'
+    }
   },
 
   data: {
-    focus: false,
+    focus: false
   },
 
   bindTextAreaBlur(e) {
-    console.log(e.detail.value);
-  },
-});
+    console.log(e.detail.value)
+  }
+})

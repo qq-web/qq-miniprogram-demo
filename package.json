@@ -4,7 +4,8 @@
   "description": "QQ小程序示例源码 > 请使用QQ开发者工具或QQ Android客户端7.9.9/Ios客户端8.0.3及以上版本运行。",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cp": "cp -R ./ ../../github/fork/qq-miniprogram-demo/"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,22 @@
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^9.0.1",
+    "commitlint": "^9.0.1",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11"
+  },
+  "lint-staged": {
+    "./**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

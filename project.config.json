@@ -19,7 +19,7 @@
 		"sourcemapDisabled": true
 	},
 	"compileType": "miniprogram",
-	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A4%BA%E4%BE%8B",
+	"projectname": "miniapp",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -31,6 +31,6 @@
 		"beforePreview": "",
 		"beforeUpload": ""
 	},
-	"qqLibVersion": "1.7.1",
+	"qqLibVersion": "1.16.0",
 	"condition": {}
 }

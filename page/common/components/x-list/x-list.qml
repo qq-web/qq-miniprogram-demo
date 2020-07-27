@@ -4,7 +4,7 @@
   </view>
 
   <view class="x-list__bd">
-    <view qq:for="{{list}}" qq:key="{{index}}" class="x-list__item" data-url="{{item.url}}" bind:tap="navigateTo">
+    <view qq:for="{{list}}" qq:key="{{index}}" class="x-list__item {{item.isNew?'new':''}}" data-url="{{item.url}}" bind:tap="navigateTo">
       <view class="x-list__item-name">{{item.name}}</view>
       <image class="x-list__item-more" src="../../../../image/common/icon-arrow-right@2x.svg"  mode="aspectFill" />
     </view>

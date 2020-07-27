@@ -2,8 +2,8 @@ Page({
   onShareAppMessage() {
     return {
       title: 'movable-view',
-      path: 'page/component/pages/movable-view/movable-view',
-    };
+      path: 'page/component/pages/movable-view/movable-view'
+    }
   },
 
   data: {
@@ -15,21 +15,21 @@ Page({
   tap() {
     this.setData({
       x: 30,
-      y: 30,
-    });
+      y: 30
+    })
   },
 
   tap2() {
     this.setData({
-      scale: 3,
-    });
+      scale: 3
+    })
   },
 
   onChange(e) {
-    console.log(e.detail);
+    console.log(e.detail)
   },
 
   onScale(e) {
-    console.log(e.detail);
-  },
-});
+    console.log(e.detail)
+  }
+})

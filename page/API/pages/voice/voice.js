@@ -1,14 +1,14 @@
-const util = require('../../../../util/util.js');
+const util = require('../../../../util/util.js')
 
-let playTimeInterval;
-let recordTimeInterval;
+let playTimeInterval
+let recordTimeInterval
 
 Page({
   onShareAppMessage() {
     return {
       title: '录音',
-      path: 'page/API/pages/voice/voice',
-    };
+      path: 'page/API/pages/voice/voice'
+    }
   },
 
   data: {
@@ -18,119 +18,118 @@ Page({
     recordTime: 0,
     playTime: 0,
     formatedRecordTime: '00:00:00',
-    formatedPlayTime: '00:00:00',
+    formatedPlayTime: '00:00:00'
   },
 
   onHide() {
     if (this.data.playing) {
-      this.stopVoice();
+      this.stopVoice()
     } else if (this.data.recording) {
-      this.stopRecordUnexpectedly();
+      this.stopRecordUnexpectedly()
     }
   },
 
   startRecord() {
-    this.setData({ recording: true });
+    this.setData({recording: true})
 
-    const that = this;
-    recordTimeInterval = setInterval(() => {
-      that.data.recordTime += 1;
-      const { recordTime } = that.data;
+    const that = this
+    recordTimeInterval = setInterval(function () {
+      const recordTime = that.data.recordTime += 1
       that.setData({
         formatedRecordTime: util.formatTime(that.data.recordTime),
-        recordTime,
-      });
-    }, 1000);
+        recordTime
+      })
+    }, 1000)
 
     qq.startRecord({
       success(res) {
         that.setData({
           hasRecord: true,
           tempFilePath: res.tempFilePath,
-          formatedPlayTime: util.formatTime(that.data.playTime),
-        });
+          formatedPlayTime: util.formatTime(that.data.playTime)
+        })
       },
       complete() {
-        that.setData({ recording: false });
-        clearInterval(recordTimeInterval);
-      },
-    });
+        that.setData({recording: false})
+        clearInterval(recordTimeInterval)
+      }
+    })
   },
 
   stopRecord() {
-    qq.stopRecord();
+    qq.stopRecord()
   },
 
   stopRecordUnexpectedly() {
-    const that = this;
+    const that = this
     qq.stopRecord({
       success() {
-        console.log('stop record success');
-        clearInterval(recordTimeInterval);
+        console.log('stop record success')
+        clearInterval(recordTimeInterval)
         that.setData({
           recording: false,
           hasRecord: false,
           recordTime: 0,
-          formatedRecordTime: util.formatTime(0),
-        });
-      },
-    });
+          formatedRecordTime: util.formatTime(0)
+        })
+      }
+    })
   },
 
   playVoice() {
-    const that = this;
-    playTimeInterval = setInterval(() => {
-      const playTime = that.data.playTime + 1;
-      console.log('update playTime', playTime);
+    const that = this
+    playTimeInterval = setInterval(function () {
+      const playTime = that.data.playTime + 1
+      console.log('update playTime', playTime)
       that.setData({
         playing: true,
         formatedPlayTime: util.formatTime(playTime),
-        playTime,
-      });
-    }, 1000);
+        playTime
+      })
+    }, 1000)
     qq.playVoice({
       filePath: this.data.tempFilePath,
       success() {
-        clearInterval(playTimeInterval);
-        const playTime = 0;
-        console.log('play voice finished');
+        clearInterval(playTimeInterval)
+        const playTime = 0
+        console.log('play voice finished')
         that.setData({
           playing: false,
           formatedPlayTime: util.formatTime(playTime),
-          playTime,
-        });
-      },
-    });
+          playTime
+        })
+      }
+    })
   },
 
   pauseVoice() {
-    clearInterval(playTimeInterval);
-    qq.pauseVoice();
+    clearInterval(playTimeInterval)
+    qq.pauseVoice()
     this.setData({
-      playing: false,
-    });
+      playing: false
+    })
   },
 
   stopVoice() {
-    clearInterval(playTimeInterval);
+    clearInterval(playTimeInterval)
     this.setData({
       playing: false,
       formatedPlayTime: util.formatTime(0),
-      playTime: 0,
-    });
-    qq.stopVoice();
+      playTime: 0
+    })
+    qq.stopVoice()
   },
 
   clear() {
-    clearInterval(playTimeInterval);
-    qq.stopVoice();
+    clearInterval(playTimeInterval)
+    qq.stopVoice()
     this.setData({
       playing: false,
       hasRecord: false,
       tempFilePath: '',
       formatedRecordTime: util.formatTime(0),
       recordTime: 0,
-      playTime: 0,
-    });
-  },
-});
+      playTime: 0
+    })
+  }
+})

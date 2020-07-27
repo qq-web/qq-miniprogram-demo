@@ -19,7 +19,22 @@
   text-indent: 30rpx;
   border-bottom: 1rpx solid #eaedf6;
 }
-
+.x-list__item.new:after {
+    content: 'NEW';
+    display: block;
+    width: 60rpx;
+    height: 32rpx;
+    position: absolute;
+    top: 40rpx;
+    right: 60rpx;
+    color: #ffffff;
+    font-size: 22rpx;
+    line-height: 32rpx;
+    text-align: center;
+    text-indent: 0rpx;
+    background-color: #ef1b1b;
+    border-radius: 6rpx;
+}
 .x-list__item-more {
   display: block;
   position: absolute;

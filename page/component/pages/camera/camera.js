@@ -2,8 +2,8 @@ Page({
   onShareAppMessage() {
     return {
       title: 'camera',
-      path: 'page/component/pages/camera/camera',
-    };
+      path: 'page/component/pages/camera/camera'
+    }
   },
 
   data: {
@@ -11,45 +11,45 @@ Page({
     videoSrc: '',
     position: 'back',
     mode: 'scanCode',
-    result: {},
+    result: {}
   },
   onLoad() {
-    this.ctx = qq.createCameraContext();
+    this.ctx = qq.createCameraContext()
   },
   takePhoto() {
     this.ctx.takePhoto({
       quality: 'high',
       success: (res) => {
         this.setData({
-          src: res.tempImagePath,
-        });
-      },
-    });
+          src: res.tempImagePath
+        })
+      }
+    })
   },
   startRecord() {
     this.ctx.startRecord({
       success: () => {
-        console.log('startRecord');
-      },
-    });
+        console.log('startRecord')
+      }
+    })
   },
   stopRecord() {
     this.ctx.stopRecord({
       success: (res) => {
         this.setData({
           src: res.tempThumbPath,
-          videoSrc: res.tempVideoPath,
-        });
-      },
-    });
+          videoSrc: res.tempVideoPath
+        })
+      }
+    })
   },
   togglePosition() {
     this.setData({
       position: this.data.position === 'front'
-        ? 'back' : 'front',
-    });
+        ? 'back' : 'front'
+    })
   },
   error(e) {
-    console.log(e.detail);
-  },
-});
+    console.log(e.detail)
+  }
+})

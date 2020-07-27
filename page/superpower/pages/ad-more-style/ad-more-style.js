@@ -1,13 +1,13 @@
 Page({
   onReady() {
-    this.videoContextV = qq.createVideoContext('vertical');
-    this.videoContextH = qq.createVideoContext('horizontal');
+    this.videoContextV = qq.createVideoContext('vertical')
+    this.videoContextH = qq.createVideoContext('horizontal')
   },
   onShareAppMessage() {
     return {
       title: 'ad',
-      path: 'page/superpower/pages/ad-more-style/ad-more-style',
-    };
+      path: 'page/superpower/pages/ad-more-style/ad-more-style'
+    }
   },
 
   data: {
@@ -16,82 +16,82 @@ Page({
     openId: '0',
     bgColor: '#ffffff',
     bgColorButton: '2',
-    isCardOpen: true,
+    isCardOpen: true
   },
   closeCard() {
     this.setData({
-      isCardOpen: false,
-    });
+      isCardOpen: false
+    })
   },
   toggleSwipB() {
     this.setData({
-      isSwipBShow: !this.data.isSwipBShow,
-    });
+      isSwipBShow: !this.data.isSwipBShow
+    })
   },
   testmove(e) {
-    console.log('move');
-    const touch = e.touches[0];
-    const { pageX } = touch;
+    console.log('move')
+    const touch = e.touches[0]
+    const {pageX} = touch
     if (!this.startX) {
-      this.moveX = 0;
+      this.moveX = 0
     } else {
-      this.moveX += pageX - this.startX;
+      this.moveX += pageX - this.startX
     }
-    this.startX = pageX;
+    this.startX = pageX
     if (Math.abs(this.moveX) > 50) {
       this.setData({
         isSwipAShow: false,
-        isSwipBShow: false,
-      });
+        isSwipBShow: false
+      })
     }
   },
   playVideoAd() {
     const videoAd = qq.createRewardedVideoAd({
-      adUnitId: '67364c394f90c551db8a95f7f8b2f8e7',
-    });
-    videoAd.show();
+      adUnitId: '67364c394f90c551db8a95f7f8b2f8e7'
+    })
+    videoAd.show()
   },
   playVideoAd2() {
     const videoAd = qq.createRewardedVideoAd({
-      adUnitId: '35cb4b17f683e2cc376b4ec8ebe6d3bf',
-    });
-    videoAd.show();
+      adUnitId: '35cb4b17f683e2cc376b4ec8ebe6d3bf'
+    })
+    videoAd.show()
   },
   changeAppType() {
     this.setData({
-      isMiniprogram: !this.data.isMiniprogram,
-    });
+      isMiniprogram: !this.data.isMiniprogram
+    })
   },
   kindToggle(e) {
     this.setData({
-      openId: e.currentTarget.id === this.data.openId ? '0' : e.currentTarget.id,
-    });
+      openId: e.currentTarget.id === this.data.openId ? '0' : e.currentTarget.id
+    })
     if (e.currentTarget.id === '4' && !this.data.isCardOpen) {
       this.setData({
-        isCardOpen: true,
-      });
+        isCardOpen: true
+      })
     }
   },
   changeDarkColor() {
-    console.log('dark');
+    console.log('dark')
     this.setData({
       bgColor: '#363636',
       bgColorButton: '0',
-    });
+    })
   },
   changeMidColor() {
     this.setData({
       bgColor: '#E5F9FE',
       bgColorButton: '1',
-    });
+    })
   },
   changeWhiteColor() {
     this.setData({
       bgColor: '#ffffff',
       bgColorButton: '2',
-    });
+    })
   },
   navigateToWeb() {
-    qq.navigateTo({ url: '../../../component/pages/web-view/web-view' });
-  },
-});
+    qq.navigateTo({url: '../../../component/pages/web-view/web-view'})
+  }
+})

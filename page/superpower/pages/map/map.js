@@ -1,4 +1,5 @@
 
+
 Page({
   data: {
     longitude: 113.934528,
@@ -6,7 +7,7 @@ Page({
     markers: [{
       longitude: 113.934528,
       latitude: 22.540503,
-      name: '腾讯大厦',
+      name: '腾讯大厦'
     }],
     showScale: false,
     enableZoom: true,
@@ -31,71 +32,71 @@ Page({
         {
           longitude: 113.934456,
           latitude: 22.539880,
-        },
+        }
       ],
       strokeWidth: 3,
       strokeColor: '#999999AA',
-    }],
+    }]
   },
   onShareAppMessage() {
     return {
       title: '地图',
-      path: 'page/superpower/pages/map/map',
-    };
+      path: 'page/superpower/pages/map/map'
+    }
   },
   regionchange(e) {
-    console.log(e.type);
+    console.log(e.type)
   },
   markertap(e) {
-    console.log(e.markerId);
+    console.log(e.markerId)
   },
   controltap(e) {
-    console.log(e.controlId);
+    console.log(e.controlId)
   },
   toggle3d() {
     this.setData({
-      enable3d: !this.data.enable3d,
-    });
+      enable3d: !this.data.enable3d
+    })
   },
   toggleShowCompass() {
     this.setData({
-      showCompass: !this.data.showCompass,
-    });
+      showCompass: !this.data.showCompass
+    })
   },
   toggleOverlooking() {
     this.setData({
-      enableOverlooking: !this.data.enableOverlooking,
-    });
+      enableOverlooking: !this.data.enableOverlooking
+    })
   },
   toggleZoom() {
     this.setData({
-      enableZoom: !this.data.enableZoom,
-    });
+      enableZoom: !this.data.enableZoom
+    })
   },
   toggleScroll() {
     this.setData({
-      enableScroll: !this.data.enableScroll,
-    });
+      enableScroll: !this.data.enableScroll
+    })
   },
   toggleRotate() {
     this.setData({
-      enableRotate: !this.data.enableRotate,
-    });
+      enableRotate: !this.data.enableRotate
+    })
   },
   togglePolygon() {
     this.setData({
-      drawPolygon: !this.data.drawPolygon,
-    });
+      drawPolygon: !this.data.drawPolygon
+    })
   },
-  toggleSatellite() {
+  toggleSatellite(){
     this.setData({
-      enableSatellite: !this.data.enableSatellite,
-    });
+      enableSatellite: !this.data.enableSatellite
+    })
   },
-  toggleTraffic() {
+  toggleTraffic(){
     this.setData({
-      enableTraffic: !this.data.enableTraffic,
-    });
+      enableTraffic: !this.data.enableTraffic
+    })
   },
 
-});
+})

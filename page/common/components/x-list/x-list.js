@@ -2,20 +2,20 @@ Component({
   properties: {
     logo: {
       type: String,
-      value: '',
+      value: ''
     },
     list: {
       type: Array,
-      value: [],
-    },
+      value: []
+    }
   },
   data: {},
   lifetimes: {},
   methods: {
     navigateTo(e) {
       qq.navigateTo({
-        url: e.currentTarget.dataset.url,
-      });
-    },
-  },
-});
+        url: e.currentTarget.dataset.url
+      })
+    }
+  }
+})

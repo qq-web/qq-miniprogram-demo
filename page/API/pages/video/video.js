@@ -1,17 +1,17 @@
-const sourceType = [['camera'], ['album'], ['camera', 'album']];
-const camera = ['front', 'back'];
+const sourceType = [['camera'], ['album'], ['camera', 'album']]
+const camera = ['front', 'back']
 
 // eslint-disable-next-line
 const duration = Array.apply(null, {length: 60}).map(function (n, i) {
-  return i + 1;
-});
+  return i + 1
+})
 
 Page({
   onShareAppMessage() {
     return {
       title: '拍摄/选择视频',
-      path: 'page/API/pages/video/video',
-    };
+      path: 'page/API/pages/video/video'
+    }
   },
 
   data: {
@@ -22,36 +22,36 @@ Page({
     camera: ['前置', '后置'],
 
     durationIndex: 59,
-    duration: duration.map((t) => `${t}秒`),
+    duration: duration.map(function (t) { return t + '秒' }),
 
-    src: '',
+    src: ''
   },
   sourceTypeChange(e) {
     this.setData({
-      sourceTypeIndex: e.detail.value,
-    });
+      sourceTypeIndex: e.detail.value
+    })
   },
   cameraChange(e) {
     this.setData({
-      cameraIndex: e.detail.value,
-    });
+      cameraIndex: e.detail.value
+    })
   },
   durationChange(e) {
     this.setData({
-      durationIndex: e.detail.value,
-    });
+      durationIndex: e.detail.value
+    })
   },
   chooseVideo() {
-    const that = this;
+    const that = this
     qq.chooseVideo({
       sourceType: sourceType[this.data.sourceTypeIndex],
       camera: camera[this.data.cameraIndex],
       maxDuration: duration[this.data.durationIndex],
       success(res) {
         that.setData({
-          src: res.tempFilePath,
-        });
-      },
-    });
-  },
-});
+          src: res.tempFilePath
+        })
+      }
+    })
+  }
+})

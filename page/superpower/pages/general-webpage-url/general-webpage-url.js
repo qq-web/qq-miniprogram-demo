@@ -4,11 +4,11 @@ Page({
       title: '自定义转发标题',
       desc: '自定义转发描述',
       path: '/page/API/pages/share/share',
-      generalWebpageUrl: 'https://q.qq.com',
-    },
+      generalWebpageUrl: 'https://q.qq.com'
+    }
   },
 
   onShareAppMessage() {
-    return this.data.shareData;
+    return this.data.shareData
   },
-});
+})

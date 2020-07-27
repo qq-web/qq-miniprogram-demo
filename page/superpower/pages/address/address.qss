@@ -1,0 +1,5 @@
+@import "../../../common/lib/qui.qss";
+
+.label{
+  min-width:200rpx;
+}

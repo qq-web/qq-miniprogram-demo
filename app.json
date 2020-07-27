@@ -3,6 +3,7 @@
     "page/superpower/index",
     "page/superpower/pages/qzone/qzone",
     "page/superpower/pages/group-profile/group-profile",
+    "page/superpower/pages/public-profile/public-profile",
     "page/superpower/pages/general-webpage-url/general-webpage-url",
     "page/superpower/pages/ad-more-style/ad-more-style",
     "page/superpower/pages/set-official-dress/set-official-dress",
@@ -11,6 +12,7 @@
     "page/superpower/pages/add-friend/add-friend",
     "page/superpower/pages/relationship/relationship",
     "page/superpower/pages/message/message",
+    "page/superpower/pages/entry/entry",
     "page/superpower/pages/message-template/message-template",
     "page/superpower/pages/message-subscribe/message-subscribe",
     "page/superpower/pages/individuation/individuation",
@@ -19,6 +21,8 @@
     "page/superpower/pages/livepusher/livepusher",
     "page/superpower/pages/livepusher-record/livepusher-record",
     "page/superpower/pages/VoIPChat/VoIPChat",
+    "page/superpower/pages/o2o/o2o",
+    "page/superpower/pages/address/address",
     "page/superpower/pages/map/map",
     "page/superpower/pages/map-more-style/map-more-style",
 
@@ -143,6 +147,7 @@
   "groupIdList": [
     "109573191"
   ],
+  "publicIdList":["2746229903"],
   "usingComponents": {
     "x-list": "./page/common/components/x-list/x-list"
   }

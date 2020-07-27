@@ -5,9 +5,9 @@ Page({
   navigateToMiniProgram() {
     qq.navigateToMiniProgram({
       appId: '1108291530',
-      success() {
+      success(res) {
         // 打开成功
-      },
-    });
-  },
-});
+      }
+    })
+  }
+})
