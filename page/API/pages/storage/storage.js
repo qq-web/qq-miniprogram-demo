@@ -1,11 +1,11 @@
-const { testValue } = require('../../../../config');
+const testValue = require('../../../../config').testValue
 
 Page({
   onShareAppMessage() {
     return {
       title: '数据存储',
-      path: 'page/API/pages/storage/storage',
-    };
+      path: 'page/API/pages/storage/storage'
+    }
   },
 
   data: {
@@ -14,21 +14,21 @@ Page({
     dialog: {
       title: '',
       content: '',
-      hidden: true,
-    },
+      hidden: true
+    }
   },
 
   keyChange(e) {
-    this.data.key = e.detail.value;
+    this.data.key = e.detail.value
   },
 
   dataChange(e) {
-    this.data.data = e.detail.value;
+    this.data.data = e.detail.value
   },
 
   getStorage() {
-    const { key, data } = this.data;
-    let storageData;
+    const {key, data} = this.data
+    let storageData
     // test
     if (key === 'cf') {
       this.setData({
@@ -36,9 +36,9 @@ Page({
         data,
         'dialog.hidden': false,
         'dialog.title': '读取数据成功',
-        'dialog.content': `data: '${testValue}'`,
-      });
-      return;
+        'dialog.content': "data: '" + testValue + "'"
+      })
+      return
     }
     if (key.length === 0) {
       this.setData({
@@ -46,18 +46,18 @@ Page({
         data,
         'dialog.hidden': false,
         'dialog.title': '读取数据失败',
-        'dialog.content': 'key 不能为空',
-      });
+        'dialog.content': 'key 不能为空'
+      })
     } else {
-      storageData = qq.getStorageSync(key);
+      storageData = qq.getStorageSync(key)
       if (storageData === '') {
         this.setData({
           key,
           data,
           'dialog.hidden': false,
           'dialog.title': '读取数据失败',
-          'dialog.content': '找不到 key 对应的数据',
-        });
+          'dialog.content': '找不到 key 对应的数据'
+        })
       } else {
         this.setData({
           key,
@@ -66,48 +66,48 @@ Page({
           'dialog.title': '读取数据成功',
           // eslint-disable-next-line
           'dialog.content': "data: '"+ storageData + "'"
-        });
+        })
       }
     }
   },
 
   setStorage() {
-    const { key, data } = this.data;
+    const {key, data} = this.data
     if (key.length === 0) {
       this.setData({
         key,
         data,
         'dialog.hidden': false,
         'dialog.title': '保存数据失败',
-        'dialog.content': 'key 不能为空',
-      });
+        'dialog.content': 'key 不能为空'
+      })
     } else {
-      qq.setStorageSync(key, data);
+      qq.setStorageSync(key, data)
       this.setData({
         key,
         data,
         'dialog.hidden': false,
-        'dialog.title': '存储数据成功',
-      });
+        'dialog.title': '存储数据成功'
+      })
     }
   },
 
   clearStorage() {
-    qq.clearStorageSync();
+    qq.clearStorageSync()
     this.setData({
       key: '',
       data: '',
       'dialog.hidden': false,
       'dialog.title': '清除数据成功',
-      'dialog.content': '',
-    });
+      'dialog.content': ''
+    })
   },
 
   confirm() {
     this.setData({
       'dialog.hidden': true,
       'dialog.title': '',
-      'dialog.content': '',
-    });
-  },
-});
+      'dialog.content': ''
+    })
+  }
+})

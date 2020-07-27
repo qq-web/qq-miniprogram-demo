@@ -7,7 +7,7 @@
 
     <view class="grid-list">
       <block qq:for-items="{{list}}" qq:key="{{item.id}}">
-        <view id="{{item.id}}" class="grid-list__item" bindtap="kindToggle">
+        <view id="{{item.id}}" class="grid-list__item {{item.isNew?'new':''}}" bindtap="kindToggle">
           <image class="grid-list__item-icon" src="../../image/common/{{item.id}}.svg" mode="aspectFill" />
           <text class="grid-list__item-title">{{item.name}}</text>
         </view>

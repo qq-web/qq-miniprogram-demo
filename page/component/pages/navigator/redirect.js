@@ -2,14 +2,14 @@ Page({
   onShareAppMessage() {
     return {
       title: 'redirectPage',
-      path: 'page/component/pages/navigator/redirect',
-    };
+      path: 'page/component/pages/navigator/redirect'
+    }
   },
 
   onLoad(options) {
-    console.log(options);
+    console.log(options)
     this.setData({
-      title: options.title,
-    });
-  },
-});
+      title: options.title
+    })
+  }
+})

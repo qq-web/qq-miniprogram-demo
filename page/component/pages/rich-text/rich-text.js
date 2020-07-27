@@ -1,13 +1,15 @@
-const htmlSnip = `<div class="div_class">
+const htmlSnip =
+`<div class="div_class">
   <h1>Title</h1>
   <p class="p">
     I guess it&nbsp;<i>comes</i>&nbsp;down to a simple
     <b>&nbsp;choice</b>.
   </p>
 </div>
-`;
+`
 
-const nodeSnip = `Page({
+const nodeSnip =
+`Page({
   data: {
     nodes: [{
       name: 'div',
@@ -22,14 +24,14 @@ const nodeSnip = `Page({
     }]
   }
 })
-`;
+`
 
 Page({
   onShareAppMessage() {
     return {
       title: 'rich-text',
-      path: 'page/component/pages/rich-text/rich-text',
-    };
+      path: 'page/component/pages/rich-text/rich-text'
+    }
   },
 
   data: {
@@ -41,28 +43,28 @@ Page({
       name: 'div',
       attrs: {
         class: 'div_class',
-        style: 'line-height: 60px; color: #4799DF;',
+        style: 'line-height: 60px; color: #4799DF;'
       },
       children: [{
         type: 'text',
-        text: 'Get busy living or get busy dying.',
-      }],
-    }],
+        text: 'Get busy living or get busy dying.'
+      }]
+    }]
   },
   renderHtml() {
     this.setData({
-      renderedByHtml: true,
-    });
+      renderedByHtml: true
+    })
   },
   renderNode() {
     this.setData({
-      renderedByNode: true,
-    });
+      renderedByNode: true
+    })
   },
   enterCode(e) {
-    console.log(e.detail.value);
+    console.log(e.detail.value)
     this.setData({
-      htmlSnip: e.detail.value,
-    });
-  },
-});
+      htmlSnip: e.detail.value
+    })
+  }
+})

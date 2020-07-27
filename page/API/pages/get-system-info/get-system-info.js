@@ -2,21 +2,21 @@ Page({
   onShareAppMessage() {
     return {
       title: '获取手机系统信息',
-      path: 'page/API/pages/get-system-info/get-system-info',
-    };
+      path: 'page/API/pages/get-system-info/get-system-info'
+    }
   },
 
   data: {
-    systemInfo: {},
+    systemInfo: {}
   },
   getSystemInfo() {
-    const that = this;
+    const that = this
     qq.getSystemInfo({
       success(res) {
         that.setData({
-          systemInfo: res,
-        });
-      },
-    });
-  },
-});
+          systemInfo: res
+        })
+      }
+    })
+  }
+})

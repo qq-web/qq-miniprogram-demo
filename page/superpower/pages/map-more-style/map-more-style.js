@@ -3,16 +3,16 @@ Page({
   onShareAppMessage() {
     return {
       title: '地图底图样式',
-      path: 'page/superpower/pages/map-more-style/map-more-style',
-    };
+      path: 'page/superpower/pages/map-more-style/map-more-style'
+    }
   },
   regionchange(e) {
-    console.log(e.type);
+    console.log(e.type)
   },
   markertap(e) {
-    console.log(e.markerId);
+    console.log(e.markerId)
   },
   controltap(e) {
-    console.log(e.controlId);
-  },
-});
+    console.log(e.controlId)
+  }
+})

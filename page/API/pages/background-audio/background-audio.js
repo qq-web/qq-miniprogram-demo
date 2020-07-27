@@ -1,108 +1,108 @@
-const app = getApp();
-const util = require('../../../../util/util.js');
+const app = getApp()
+const util = require('../../../../util/util.js')
 
-const dataUrl = 'http://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMO.mp3';
+const dataUrl = 'http://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMO.mp3'
 Page({
   onShareAppMessage() {
     return {
       title: '背景音乐',
-      path: 'page/API/pages/background-audio/background-audio',
-    };
+      path: 'page/API/pages/background-audio/background-audio'
+    }
   },
 
   onLoad() {
-    this.enableInterval();
+    this._enableInterval()
 
     if (app.globalData.backgroundAudioPlaying) {
       this.setData({
-        playing: true,
-      });
+        playing: true
+      })
     }
   },
   data: {
     playing: false,
     playTime: 0,
     formatedPlayTime: '00:00:00',
-    src: dataUrl,
+    src: dataUrl
   },
   play() {
-    const backgroundAudioManager = qq.getBackgroundAudioManager();
+    const backgroundAudioManager = qq.getBackgroundAudioManager()
 
     // 设置了 src 之后会自动播放
-    backgroundAudioManager.src = this.data.src;
+    backgroundAudioManager.src = this.data.src
     this.setData({
-      playing: true,
-    });
-    app.globalData.backgroundAudioPlaying = true;
-    this.enableInterval();
+      playing: true
+    })
+    app.globalData.backgroundAudioPlaying = true
+    this._enableInterval()
   },
   seek(e) {
-    clearInterval(this.updateInterval);
-    const that = this;
-    const manager = qq.getBackgroundAudioManager();
-    console.log('e.detail.value', e.detail.value, typeof e.detail.value);
-    manager.seek(e.detail.value);
+    clearInterval(this.updateInterval)
+    const that = this
+    const manager = qq.getBackgroundAudioManager()
+    console.log('e.detail.value', e.detail.value, typeof e.detail.value)
+    manager.seek(e.detail.value)
     manager.onSeeking(() => {
-      console.log('seeking');
-    });
+      console.log('seeking')
+    })
     manager.onSeeked(() => {
-      console.log('seeked');
-      setTimeout(() => {
-        that.enableInterval();
-      }, 2000);
-    });
+      console.log('seeked')
+      setTimeout(function () {
+        that._enableInterval()
+      }, 2000)
+    })
     // qq.seekBackgroundAudio({
     //   position: e.detail.value,
     //   complete() {
     //     // 实际会延迟两秒左右才跳过去
     //     setTimeout(function () {
-    //       that.enableInterval()
+    //       that._enableInterval()
     //     }, 2000)
     //   }
     // })
   },
   pause() {
-    const that = this;
+    const that = this
     qq.pauseBackgroundAudio({
       dataUrl,
       success() {
         that.setData({
-          playing: false,
-        });
-      },
-    });
-    app.globalData.backgroundAudioPlaying = false;
+          playing: false
+        })
+      }
+    })
+    app.globalData.backgroundAudioPlaying = false
   },
   stop() {
-    const that = this;
+    const that = this
     qq.stopBackgroundAudio({
       dataUrl,
       success() {
         that.setData({
           playing: false,
           playTime: 0,
-          formatedPlayTime: util.formatTime(0),
-        });
-      },
-    });
-    app.globalData.backgroundAudioPlaying = false;
+          formatedPlayTime: util.formatTime(0)
+        })
+      }
+    })
+    app.globalData.backgroundAudioPlaying = false
   },
-  enableInterval() {
-    const that = this;
+  _enableInterval() {
+    const that = this
     function update() {
-      const manager = qq.getBackgroundAudioManager();
+      const manager = qq.getBackgroundAudioManager()
       that.setData({
         playTime: manager.currentTime ? manager.currentTime : 0,
-        formatedPlayTime: manager.currentTime ? util.formatTime(manager.currentTime + 1) : '00:00:00',
-      });
+        formatedPlayTime: manager.currentTime ? util.formatTime(manager.currentTime + 1) : '00:00:00'
+      })
     }
-    console.log('app.globalData.backgroundAudioPlaying', app.globalData.backgroundAudioPlaying);
+    console.log('app.globalData.backgroundAudioPlaying', app.globalData.backgroundAudioPlaying)
     if (app.globalData.backgroundAudioPlaying) {
-      update();
-      this.updateInterval = setInterval(update, 500);
+      update()
+      this.updateInterval = setInterval(update, 500)
     }
   },
   onUnload() {
-    clearInterval(this.updateInterval);
-  },
-});
+    clearInterval(this.updateInterval)
+  }
+})

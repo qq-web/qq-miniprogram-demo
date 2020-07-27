@@ -1,11 +1,11 @@
-const util = require('../../../../util/util.js');
+const util = require('../../../../util/util.js')
 
 Page({
   onShareAppMessage() {
     return {
       title: 'InnerAudioContext',
       path: 'page/component/pages/InnerAudioContext/InnerAudioContext',
-    };
+    }
   },
 
   data: {
@@ -16,29 +16,29 @@ Page({
     isPlaying: false,
   },
   onLoad() {
-    this.innerAudioContext = qq.createInnerAudioContext();
-    this.innerAudioContext.src = 'http://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMM.wav';
+    this.innerAudioContext = qq.createInnerAudioContext()
+    this.innerAudioContext.src = 'http://down.qq.com/qzone/demo_music/%E3%80%8A%E5%85%A8%E6%96%B0%E5%87%BA%E5%8F%91%E3%80%8BFN%20MMM.wav'
   },
   play() {
-    const that = this;
+    const that = this
     this.setData({
       isPlaying: true,
-    });
-    this.innerAudioContext.play();
+    })
+    this.innerAudioContext.play()
     this.innerAudioContext.onTimeUpdate(() => {
       that.setData({
-        time: util.formatTime(that.innerAudioContext.currentTime),
-      });
-    });
+        time: util.formatTime(that.innerAudioContext.currentTime)
+      })
+    })
   },
   pause() {
-    this.innerAudioContext.pause();
+    this.innerAudioContext.pause()
     this.setData({
       isPlaying: false,
-    });
+    })
   },
 
   onUnload() {
-    this.innerAudioContext.destroy();
-  },
-});
+    this.innerAudioContext.destroy()
+  }
+})

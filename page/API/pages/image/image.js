@@ -1,12 +1,12 @@
-const sourceType = [['camera'], ['album'], ['camera', 'album']];
-const sizeType = [['compressed'], ['original'], ['compressed', 'original']];
+const sourceType = [['camera'], ['album'], ['camera', 'album']]
+const sizeType = [['compressed'], ['original'], ['compressed', 'original']]
 
 Page({
   onShareAppMessage() {
     return {
       title: '图片',
-      path: 'page/API/pages/image/image',
-    };
+      path: 'page/API/pages/image/image'
+    }
   },
 
   data: {
@@ -18,43 +18,43 @@ Page({
     sizeType: ['压缩', '原图', '压缩或原图'],
 
     countIndex: 8,
-    count: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    count: [1, 2, 3, 4, 5, 6, 7, 8, 9]
   },
   sourceTypeChange(e) {
     this.setData({
-      sourceTypeIndex: e.detail.value,
-    });
+      sourceTypeIndex: e.detail.value
+    })
   },
   sizeTypeChange(e) {
     this.setData({
-      sizeTypeIndex: e.detail.value,
-    });
+      sizeTypeIndex: e.detail.value
+    })
   },
   countChange(e) {
     this.setData({
-      countIndex: e.detail.value,
-    });
+      countIndex: e.detail.value
+    })
   },
   chooseImage() {
-    const that = this;
+    const that = this
     qq.chooseImage({
       sourceType: sourceType[this.data.sourceTypeIndex],
       sizeType: sizeType[this.data.sizeTypeIndex],
       count: this.data.count[this.data.countIndex],
       success(res) {
-        console.log(res);
+        console.log(res)
         that.setData({
-          imageList: res.tempFilePaths,
-        });
-      },
-    });
+          imageList: res.tempFilePaths
+        })
+      }
+    })
   },
   previewImage(e) {
-    const current = e.target.dataset.src;
+    const current = e.target.dataset.src
 
     qq.previewImage({
       current,
-      urls: this.data.imageList,
-    });
-  },
-});
+      urls: this.data.imageList
+    })
+  }
+})

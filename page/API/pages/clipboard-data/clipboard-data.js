@@ -2,8 +2,8 @@ Page({
   onShareAppMessage() {
     return {
       title: '剪切板',
-      path: 'page/API/pages/clipboard-data/clipboard-data',
-    };
+      path: 'page/API/pages/clipboard-data/clipboard-data'
+    }
   },
 
   data: {
@@ -13,8 +13,8 @@ Page({
 
   valueChanged(e) {
     this.setData({
-      value: e.detail.value,
-    });
+      value: e.detail.value
+    })
   },
 
   copy() {
@@ -24,25 +24,25 @@ Page({
         qq.showToast({
           title: '复制成功',
           icon: 'success',
-          duration: 1000,
-        });
-      },
-    });
+          duration: 1000
+        })
+      }
+    })
   },
 
   paste() {
-    const self = this;
+    const self = this
     qq.getClipboardData({
       success(res) {
         self.setData({
-          pasted: res.data,
-        });
+          pasted: res.data
+        })
         qq.showToast({
           title: '粘贴成功',
           icon: 'success',
-          duration: 1000,
-        });
-      },
-    });
-  },
-});
+          duration: 1000
+        })
+      }
+    })
+  }
+})

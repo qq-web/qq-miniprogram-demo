@@ -2,8 +2,8 @@ Page({
   onShareAppMessage() {
     return {
       title: '用户截屏事件',
-      path: 'page/API/pages/capture-screen/capture-screen',
-    };
+      path: 'page/API/pages/capture-screen/capture-screen'
+    }
   },
 
   data: {
@@ -12,8 +12,8 @@ Page({
   onLoad() {
     qq.onUserCaptureScreen(() => {
       this.setData({
-        captured: true,
-      });
-    });
-  },
-});
+        captured: true
+      })
+    })
+  }
+})

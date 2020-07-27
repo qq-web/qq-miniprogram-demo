@@ -1,23 +1,23 @@
 function getRandomColor() {
-  const rgb = [];
+  const rgb = []
   for (let i = 0; i < 3; ++i) {
-    let color = Math.floor(Math.random() * 256).toString(16);
-    color = color.length === 1 ? `0${color}` : color;
-    rgb.push(color);
+    let color = Math.floor(Math.random() * 256).toString(16)
+    color = color.length === 1 ? '0' + color : color
+    rgb.push(color)
   }
-  return `#${rgb.join('')}`;
+  return '#' + rgb.join('')
 }
 
 Page({
   onShareAppMessage() {
     return {
       title: 'video',
-      path: 'page/component/pages/video/video',
-    };
+      path: 'page/component/pages/video/video'
+    }
   },
 
   onReady() {
-    this.videoContext = qq.createVideoContext('myVideo');
+    this.videoContext = qq.createVideoContext('myVideo')
   },
 
   inputValue: '',
@@ -27,41 +27,41 @@ Page({
     [{
       text: '第 1s 出现的弹幕',
       color: '#ff0000',
-      time: 1,
+      time: 1
     }, {
       text: '第 3s 出现的弹幕',
       color: '#ff00ff',
-      time: 3,
-    }],
+      time: 3
+    }]
   },
 
   bindInputBlur(e) {
-    this.inputValue = e.detail.value;
+    this.inputValue = e.detail.value
   },
 
   bindButtonTap() {
-    const that = this;
+    const that = this
     qq.chooseVideo({
       sourceType: ['album', 'camera'],
       maxDuration: 60,
       camera: ['front', 'back'],
       success(res) {
         that.setData({
-          src: res.tempFilePath,
-        });
-      },
-    });
+          src: res.tempFilePath
+        })
+      }
+    })
   },
 
   bindSendDanmu() {
     this.videoContext.sendDanmu({
       text: this.inputValue,
-      color: getRandomColor(),
-    });
+      color: getRandomColor()
+    })
   },
 
   videoErrorCallback(e) {
-    console.log('视频错误信息:');
-    console.log(e.detail.errMsg);
-  },
-});
+    console.log('视频错误信息:')
+    console.log(e.detail.errMsg)
+  }
+})

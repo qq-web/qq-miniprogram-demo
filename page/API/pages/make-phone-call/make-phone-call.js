@@ -2,32 +2,32 @@ Page({
   onShareAppMessage() {
     return {
       title: '打电话',
-      path: 'page/API/pages/make-phone-call/make-phone-call',
-    };
+      path: 'page/API/pages/make-phone-call/make-phone-call'
+    }
   },
 
   data: {
-    disabled: true,
+    disabled: true
   },
   bindInput(e) {
-    this.inputValue = e.detail.value;
+    this.inputValue = e.detail.value
 
     if (this.inputValue.length > 0) {
       this.setData({
-        disabled: false,
-      });
+        disabled: false
+      })
     } else {
       this.setData({
-        disabled: true,
-      });
+        disabled: true
+      })
     }
   },
   makePhoneCall() {
     qq.makePhoneCall({
       phoneNumber: this.inputValue,
       success() {
-        console.log('成功拨打电话');
-      },
-    });
-  },
-});
+        console.log('成功拨打电话')
+      }
+    })
+  }
+})

@@ -2,23 +2,23 @@ Page({
   onShareAppMessage() {
     return {
       title: '扫码',
-      path: 'page/API/pages/scan-code/scan-code',
-    };
+      path: 'page/API/pages/scan-code/scan-code'
+    }
   },
 
   data: {
-    result: '',
+    result: ''
   },
 
   scanCode() {
-    const that = this;
+    const that = this
     qq.scanCode({
       success(res) {
         that.setData({
-          result: res.result,
-        });
+          result: res.result
+        })
       },
-      fail() {},
-    });
-  },
-});
+      fail() {}
+    })
+  }
+})

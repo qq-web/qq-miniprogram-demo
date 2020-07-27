@@ -10,50 +10,50 @@ const texts = [
   '最大化地进行社交流量传播',
   '围绕广告、支付等商业化模式提供解决方案',
   '让开发者更专注于业务',
-  '......',
-];
+  '......'
+]
 
 Page({
   onShareAppMessage() {
     return {
       title: 'text',
-      path: 'page/component/pages/text/text',
-    };
+      path: 'page/component/pages/text/text'
+    }
   },
 
   data: {
     text: '',
     canAdd: true,
-    canRemove: false,
+    canRemove: false
   },
   extraLine: [],
 
   add() {
-    this.extraLine.push(texts[this.extraLine.length % 12]);
+    this.extraLine.push(texts[this.extraLine.length % 12])
     this.setData({
       text: this.extraLine.join('\n'),
       canAdd: this.extraLine.length < 12,
-      canRemove: this.extraLine.length > 0,
-    });
+      canRemove: this.extraLine.length > 0
+    })
     setTimeout(() => {
       this.setData({
-        scrollTop: 99999,
-      });
-    }, 0);
+        scrollTop: 99999
+      })
+    }, 0)
   },
   remove() {
     if (this.extraLine.length > 0) {
-      this.extraLine.pop();
+      this.extraLine.pop()
       this.setData({
         text: this.extraLine.join('\n'),
         canAdd: this.extraLine.length < 12,
         canRemove: this.extraLine.length > 0,
-      });
+      })
     }
     setTimeout(() => {
       this.setData({
-        scrollTop: 99999,
-      });
-    }, 0);
-  },
-});
+        scrollTop: 99999
+      })
+    }, 0)
+  }
+})

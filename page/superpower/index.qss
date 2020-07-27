@@ -19,8 +19,24 @@ page {
   margin: 0 0 20rpx 20rpx;
   border-radius: 10rpx;
   background-color: #fff;
+  position: relative;
 }
-
+.grid-list__item.new:after {
+    content: 'NEW';
+    display: block;
+    width: 60rpx;
+    height: 32rpx;
+    margin: 6rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 22rpx;
+    line-height: 32rpx;
+    text-align: center;
+    background-color: #ef1b1b;
+    border-radius: 6rpx;
+}
 .grid-list__item-icon {
   width: 80rpx;
   height: 80rpx;
