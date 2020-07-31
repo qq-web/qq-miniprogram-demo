@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
   data: {
     onShareAppMessage() {
@@ -13,10 +15,12 @@ Page({
 
   },
   onShow() {
-    const {entryDataHash} = qq.getLaunchOptionsSync()
+    const {entryDataHash} = app.globalData.appOnShowOptions
     console.log(entryDataHash)
     if (entryDataHash) {
       this.setData({entryDataHash})
+    } else {
+      this.setData({entryDataHash: ''})
     }
   },
   saveAppToDesktop() {
