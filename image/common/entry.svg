@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">  <image id="image0" width="80" height="80" x="0" y="0"
-    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQBAMAAAB8P++eAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAACqqtWan7SZn7Wa
-obaZnrWYn7SZn7WYnrT///8KgkrlAAAACHRSTlMABojmSeO1tJlGl3cAAAABYktHRAnx2aXsAAAA
-B3RJTUUH5AcXCycM4clRrQAAAIxJREFUSMft1aEOgCAQBmCSIzqfgGhkJqLFTuRxLCqPbXG6Y/wM
-gu42789fuZ8dp5TkbxlcBJl6AscIYwh0GFoCsYvr+zDbhmYDl/wY25zCAAb2KcTNsIKgGYECBX4H
-u3tJ9zLUzzpzgNe/goY5yjBXTxu0tdBUQnKG8RMmaYHga+YDA4A+hfhoSn6YE65xzguW+bChAAAA
-RGVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAADoAEAAwAAAAEAAQAAoAIABAAAAAEAAABQ
-oAMABAAAAAEAAABQAAAAADHgTE8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDctMjNUMTE6Mzk6
-MTIrMDA6MDDFDa0DAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA3LTIzVDExOjM5OjEyKzAwOjAw
-tFAVvwAAABF0RVh0ZXhpZjpDb2xvclNwYWNlADEPmwJJAAAAEnRFWHRleGlmOkV4aWZPZmZzZXQA
-MjZTG6JlAAAAF3RFWHRleGlmOlBpeGVsWERpbWVuc2lvbgA4MIVW3/AAAAAXdEVYdGV4aWY6UGl4
-ZWxZRGltZW5zaW9uADgwWMAGdQAAAABJRU5ErkJggg==" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>图标/组件/大图标/多场景入口</title>
+    <desc>Created with Sketch.</desc>
+    <g id="特殊能力" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-227.000000, -77.000000)">
+            <g id="编组" transform="translate(237.000000, 92.000000)">
+                <g id="编组-2" transform="translate(20.000000, 7.000000)"></g>
+                <polyline id="路径" stroke="#989EB4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="7 9.25390329 7 0 56 0 56 42 47.8262789 42"></polyline>
+                <g id="图标/组件/视图容器" transform="translate(0.000000, 7.000000)" fill="#989EB4">
+                    <path d="M47,0 C48.1045695,-2.02906125e-16 49,0.8954305 49,2 L49,44 C49,45.1045695 48.1045695,46 47,46 L2,46 C0.8954305,46 1.3527075e-16,45.1045695 0,44 L0,2 C-5.7935996e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L47,0 Z M43,6 L6,6 L6,40 L43,40 L43,6 Z" id="合并形状"></path>
+                    <rect id="矩形" x="9" y="28" width="21" height="6" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
