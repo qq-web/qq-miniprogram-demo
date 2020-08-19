@@ -1,0 +1,13 @@
+@import "../../../common/lib/qui.qss";
+
+.pay-title {
+  margin-bottom: 20rpx;
+}
+
+.pay-info {
+  text-align: center;
+}
+
+.pay-total-fee {
+  font-size: 60rpx;
+}
