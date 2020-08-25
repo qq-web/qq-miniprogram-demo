@@ -51,6 +51,11 @@ Page({
         url: 'o2o/o2o',
         isNew: true
       },
+      {
+        id: 'wxPay',
+        name: '微信支付能力',
+        url: 'wxPay/wxPay'
+      }
     ]
   },
 

@@ -39,6 +39,9 @@ const config = {
   // 上传文件接口
   uploadFileUrl: 'https://q.qq.com/upload',
 
+  // 微信支付接口
+  wxPayUrl: 'https://q.qq.com/demo/wxPay',
+
   // 下载示例图片接口
   downloadExampleUrl: 'https://qzonestyle.gtimg.cn/aoi/sola/20190717151707_2LoGUX7hZ1.png'
 }
